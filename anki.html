@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>DJT anki guide</title>
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+<link rel="stylesheet" href="anki.css">
+</head>
+<body>
+
+
+<p><h1>Anki Startup Guide</h1></p>
+<p><span class="subheading">(and <a href="#import">real-time import feature</a>)</span></p>
+<!-- <p><span class="italic">original version found</span> <span class="bold"><a href="http://goo.gl/CYTQvs">here</a></span></p> -->
+<p><h3>Step 1:</h3></p>
+<p>Download Anki: <a href="http://ankisrs.net">http://ankisrs.net</a></p>
+
+<p><h3>Step 2:</h3></p>
+<p>Download the Core 2K/6K deck here (it already has sounds included):</p>
+<p><a href="https://mega.nz/#!QIQywAAZ!g6wRM6KvDVmLxq7X5xLrvaw7HZGyYULUkT_YDtQdgfU">https://mega.nz/#!QIQywAAZ!g6wRM6KvDVmLxq7X5xLrvaw7HZGyYULUkT_YDtQdgfU</a></p>
+
+<p><h3>Step 3:</h3></p>
+<p>Add it to Anki (drag and drop/'Import File' button on the bottom of Anki window/Ctrl+I).</p>
+
+<p><h3>Step 4 (optional step for images):</h3></p>
+<p>Download media the deck uses (Card images): </p>
+<p><a href="http://www.mediafire.com/download/nrvpcx9a766nh1t/core2k-image.munged.rar">http://www.mediafire.com/download/nrvpcx9a766nh1t/core2k-image.munged.rar</a></p>
+ 
+<p><h3>Step 5 (optional step for images):</h3></p>
+<p>Unrar the media content and paste into your Anki 'collection.media' folder (remember to paste files, not a folder with files). Every file should by default have following access path:</p>
+<p>C:\Users\_____\Documents\Anki\_____\collection.media</p>
+
+<p><h3>Step 6 (optional step for images):</h3></p>
+<p>Add the card images to the card format: Hit "Browse" -> Navigate to the Core deck on the left sidebar -> Hit the "Cards..." button -> Add {{Sentence-Image}} under the <br> at the bottom of the "Back Template" section.</p>
+
+<p><h3>Step 7:</h3></p>
+<p>Remove the review limit by going to the deck options and under the "Reviews" tab and setting "Maximum reviews/day" to 9999 (Don't be alarmed by this number, it likely won't go above 200-350 in the long run at decent retention with 20-30 new cards a day, the point is more to set it to something you'll never hit)</p>
+
+<p><h3>Step 8:</h3></p>
+<p>Learn.</p>
+
+
+<p>Images aren't really required for this deck, most people don't use them so feel free to omit steps 4-6.</p>
+
+<p>Alternatively, if you don't want any media (slow Internet connection or something) use this deck:</p>
+<p><a href="http://www.mediafire.com/download/2hzy5cz5urb8da6/core2k+6k+backup.apkg">http://www.mediafire.com/download/2hzy5cz5urb8da6/core2k+6k+backup.apkg</a></p>
+
+
+<p>Retention Tips / Misc comments and common opinions (note that most of these are highly personal preference and your mileage may vary, so make up your own mind about doing any of this stuff):</p>
+
+<ul>
+<li>Some people like doing new cards separate from reviews since it prevents a bunch of new cards from all piling up at the end of your session, and means that you're mentally 'fresh' when facing them. If you want to do this, there is an option to do new cards before (or after) reviews <a href="https://my.mixtape.moe/wrgzhn.png">in Anki preferences</a>.</li>
+<li>Going into the deck, hitting the "Custom Study" button, selecting "Review forgotten cards", leaving it at 1 day, and hitting okay will create a temporary deck with all of the cards you hit again on that day so you can do focused reviewing of cards that gave you trouble. This also gets cards you hit "again" on while doing new cards. You can delete the custom study deck after you're done with it and the cards will go back to their decks.</li>
+<li>Increasing the number of steps on new cards (deck options -> changing the "1 10" under "Steps" on the "New" tab) can also help retention with new words since it makes you get the words correct more times in a row before letting them move on to the next day, but it also means new cards take longer to do. "1 1 10", "1 10 20", "1 1 10 20", etc. whatever works best to you.</li>
+<li>Be aware of the "learn ahead" option in Anki's settings. This is what's letting you see a card you just hit "Again (10m)" on. Lowering it or even setting it to 0 could help you learn/relearn words since it forces you to wait the entire interval before letting you guess again, but it could also make doing reviews and new cards a bit more tedious and time consuming. If you have new card / relearn reviews on your decks you were recently doing but it's not letting you do them, this setting is likely why.</li>
+<li>If you want to keep track of what kanji are in words you know, then try the <a href="https://ankiweb.net/shared/info/942570791">kanji grid add-on</a>.</li>
+</ul>
+
+<hr>
+
+<h3 id="import">Rikaisama's Anki Real-Time Import Feature</h3>
+<p>Rikaisama's <a href="http://rikaisama.sourceforge.net/#realtime_import_help">real-time import feature</a> allows you to quickly add new words to your mining deck. (See the <a href="guide.html">guide</a> for an explanation of mining.)</p>
+
+<h4>Prerequisites:</h4>
+
+<ul>
+<li><a href="http://rikaisama.sourceforge.net/">Rikaisama</a></li>
+<li>Real-Time Import <a href="https://ankiweb.net/shared/info/2512410601">add-on</a> for Anki</li>
+</ul>
+
+<p>After installing both of the above, open Firefox, make your way over to the add-ons <a href="https://a.pomf.cat/xbnfje.png">management page</a>, locate the Rikaisama add-on, and hit the "Preferences" button to open up the Rikaisama options window. We are interested in two tabs here: <a href="https://a.pomf.cat/zvfmpz.png">"Clipboard & Save" and "Anki"</a>.</p>
+
+<p>Go to the "Clipboard & Save" tab. The only thing we are interested in here is the "Saved audio" field (you can skip this part if you are not interested in having audio on your cards). You need to point this field to Anki's "collection.media" folder, which should be located inside a folder called "Anki" within your computer's "Documents" folder.</p>
+
+<p>Now, onto the "Anki" tab. The first field we are interested in here is:</p>
+
+<h4>"Save format"</h4>
+
+<p>This is where we tell Rikaisama what information we want it to save about a particular word. Here is a typical example:</p>
+
+<ul>
+<li><span style="font-weight:bold;color:blue">$d</span><span style="color:black">$t</span><span style="font-weight:bold;color:red">$r</span><span style="color:black">$t</span><span style="font-weight:bold;color:green">$n</span><span style="color:black">$t</span><span style="font-weight:bold;color:purple">[sound:$a]</span></li>
+</ul>
+
+<p>There is a key below the "Save format" field explaining what all of this does. The <code>$d</code> option saves the dictionary form of the word you have hovered over (meaning 食べます, for example, would be saved as 食べる). The <code>$t</code> option is used to denote the end of one field (i.e. those in the "Field names" field) and the beginning of another. <code>$r</code> saves the reading, and <code>$n</code> the definition. Finally, <code>[sound:$a]</code> saves an audio clip of the word (if available).</p>
+
+<p>You will notice in the above example that <code>$a</code> has not been used alone, but rather enclosed in square brackets and preceded by "<code>sound:</code>". This is because audio files must be formatted this way for Anki to play them. If you only put "audio.mp3" into one of your Anki fields (as opposed to "[sound:audio.mp3]"),  you would simply get the text "audio.mp3" on your card.</p>
+
+<h4>"Field names"</h4>
+
+<p>The next field tells Rikaisama to which fields in our Anki deck the information specified in the "Save format" field should be added. A typical example, corresponding to the "Save format" above, would be:</p>
+
+<ul>
+<li><span style="font-weight:bold;color:blue">Vocabulary</span> <span style="font-weight:bold;color:red">Reading</span> <span style="font-weight:bold;color:green">Definition</span> <span style="font-weight:bold;color:purple">Audio</span></li>
+</ul>
+
+<p>These fields MUST exist in our Anki deck in order for this to work. First, create your deck is Anki by pressing the <a href="https://a.pomf.cat/dgdksx.png">"Add" button</a>. Click the <a href="https://a.pomf.cat/rhkgko.png">"Deck" button</a>, then <a href="https://a.pomf.cat/hiouim.png">"Add"</a>. Type in the name of your new deck in the window that pops up and hit "OK".</p>
+
+<p>Now we need to add the required fields. Hit the <a href="https://a.pomf.cat/mhsqxv.png">"Fields..." button</a>. Since all decks must have at least one field, we will first click <a href="https://a.pomf.cat/zenodf.png">"Add"</a>, type in "Vocabulary" and then hit "OK". We should now have a field called "Vocabulary" in our deck, so we can go ahead and delete the default fields "Front" and "Back" by selecting them and clicking "Delete". Now repeat the adding process for the other required fields: "Reading", "Definition" and "Audio". Once done, hit <a href="https://a.pomf.cat/jxwaff.png">"Close"</a>.</p>
+
+<p>Now all that's left to do is edit the appearance of our cards. To do this, click the <a href="https://a.pomf.cat/kwczkb.png">"Cards..." button</a>. This is outside the scope of this tutorial, but at the following pastebin link you will find a sample which you can copy and paste: <a href="http://pastebin.com/HWk3Nnm6">http://pastebin.com/HWk3Nnm6</a></p>
+
+<!-- <p>Once you're done, hit <a href="https://a.pomf.cat/ioyexp.png">"Close"</a> and then <a href="https://a.pomf.cat/vfyafw.png">"Close"</a> again.</p>-->
+
+<p>And that's it! Now open your <a href="https://a.pomf.cat/kfxxcf.png">deck</a> by clicking on it and try adding your very first word: 中出し - just hover over it with your mouse with Rikaisama enabled and hit "r"!</p>
+
+<h4>TROUBLESHOOTING</h4>
+
+<p>If you followed the instructions and it still does not work, manually add a new card to your mining deck and try again.</p>
+
+
+</body>
+</html>

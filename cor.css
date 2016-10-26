@@ -1,0 +1,400 @@
+body {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  margin:0px auto;
+  line-height:1.6;
+  margin-top: 0px;
+}
+
+
+:selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-moz-selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-o-selection {
+    background-color: #fff2a8;
+
+}
+
+::-ms-selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-webkit-selection {
+    background-color: #fff2a8;
+
+}
+
+
+a:link {
+text-decoration: none;
+color: #0088CC;
+}
+
+a:visited {
+text-decoration: none;
+color: #0088CC;
+}
+
+a:hover {
+text-decoration: underline;
+color: #373D3F;
+}
+
+a:active {
+text-decoration: underline;
+color: #0066ff;
+}
+
+
+
+
+
+	.table {
+   font-size: 12px;
+  margin:0px auto;
+		border: 1px solid #CCC; 
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.heading {
+		background-color: #FFF2CC; 
+		color: #373D3F;
+		font-weight: bold;
+	}
+
+	} 
+	.anki {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.xslx {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+	} 
+	.internet {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+	} 
+	.l-r {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.writing {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.listening {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.grammar {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+	} 
+	.vocab {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+	} 
+	.misc {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.readers {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.reference {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.culture {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+
+	} 
+	.td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+
+dt {
+  font-weight: bold;
+}
+
+dl {
+  margin-bottom: 50px;
+}
+
+#bug:target {
+  outline: 4px solid #ccc;
+}
+
+
+.tabPanel-widget {
+  position: relative;  
+  background: #999;
+}
+
+
+.tabPanel-widget > label {
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+.tabPanel-widget > label,
+.tabPanel-widget > h2 {
+  font-size: 1.1em;
+  width: 9em;
+  height: 2em;
+  line-height: 2em;
+}
+
+
+.tabPanel-widget > h2 {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  background: #999;
+  color: #fff;
+}
+
+.tabPanel-widget > label {
+
+  border-right: 1px solid #fff;  
+}
+
+
+.tabPanel-widget input,
+.tabPanel-widget > label ~ label,
+.tabPanel-widget > h2 ~ h2 {
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+.tabPanel-widget label:nth-child(1),
+.tabPanel-widget h2:nth-child(3) {
+  left: 0em;
+}
+
+.tabPanel-widget label:nth-child(5),
+.tabPanel-widget h2:nth-child(7) {
+  left: 9em;
+}
+
+.tabPanel-widget label:nth-child(9),
+.tabPanel-widget h2:nth-child(11) {
+  left: 18em;
+}
+
+.tabPanel-widget label:nth-child(13),
+.tabPanel-widget h2:nth-child(15) {
+  left: 27em;
+}
+
+.tabPanel-widget label:nth-child(17),
+.tabPanel-widget h2:nth-child(19) {
+  left: 36em;
+}
+
+
+
+.tabPanel-widget input + h2 + div {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+.tabPanel-widget input:checked + h2 + div {
+  position: static !important;
+  padding: 1em !important;
+  height: auto !important; 
+  width: auto !important; 
+}
+
+
+.tabPanel-widget label:hover {
+  cursor: pointer;
+}
+
+.tabPanel-widget > div {
+  background: #f0f0f0;
+  padding: 1em;
+}
+
+
+.tabPanel-widget input[name="tabs"] {
+  opacity: 0;
+  position: absolute;
+}
+
+
+
+
+.tabPanel-widget input[name="tabs"]:focus + h2 {
+  outline: 1px dotted #000;
+  outline-offset: 10px;
+}
+
+
+
+.tabPanel-widget:hover h2 {
+  outline: none !important;
+}
+
+
+.tabPanel-widget input[name="tabs"]:checked + h2 {
+  background: #333;
+}
+
+
+.tabPanel-widget input[name="tabs"]:checked + h2:after {
+  content: '';
+  margin: auto;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333;
+}
+
+
+@media screen and (max-width: 45em) {
+  
+
+  .tabPanel-widget label,
+  .tabPanel-widget input[name="tabs"] {
+    display: none;
+  }
+  
+
+  .tabPanel-widget > input + h2 + div {
+    display: block !important;
+    position: static !important;
+    padding: 1em !important;
+    height: auto !important; 
+    width: auto !important; 
+  }
+  
+
+  .tabPanel-widget h2 {
+    width: auto;
+    position: static !important;
+    background: #999 !important;
+  }
+  
+
+  .tabPanel-widget h2:after {
+    display: none !important;
+  }
+
+}

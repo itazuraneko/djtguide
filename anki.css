@@ -1,0 +1,173 @@
+html {
+   max-height: 999999px;
+}
+
+body {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  margin:40px auto;
+  max-width:700px;
+  line-height:1.6;
+  color: #373D3F;
+  background: #ffffff;
+  margin-top: 0px;
+}
+
+img.a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width:65%;
+}
+
+img.b {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width:75%;
+}
+
+img.c {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width:80%;
+}
+
+h1 {
+font-size:30.0pt;
+text-align:center;
+}
+
+.pagetop {
+position:fixed;
+top:0px;
+height: 20px;
+width:100%;
+background: #ffffff;
+}
+
+.header_right {
+padding: 2px 10px;
+position:fixed;
+right:50px;
+top:0px;
+width:100%;
+text-align: right;
+text-decoration:hover; underline;
+font-size:13.0pt;
+}
+
+.header_center {
+padding: 2px 10px;
+position:fixed;
+top:0px;
+width:100%;
+text-align: center;
+font-size:13.0pt;
+color: #373D3F;
+}
+
+.header_left {
+padding: 2px 10px;
+position:fixed;
+left:50px;
+top:0px;
+width:100%;
+text-align: left;
+text-decoration:hover; underline;
+font-size:13.0pt;
+}
+
+::selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-moz-selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-o-selection {
+    background-color: #fff2a8;
+
+}
+
+::-ms-selection {
+    background-color: #fff2a8;
+
+}
+
+
+::-webkit-selection {
+    background-color: #fff2a8;
+
+}
+
+
+a:link {
+text-decoration: none;
+color: #0066ff;
+}
+
+a:visited {
+text-decoration: none;
+color: purple;
+}
+
+a:hover {
+text-decoration: underline;
+color: #373D3F;
+}
+
+a:active {
+text-decoration: underline;
+color: #373D3F;
+}
+
+
+
+li {
+   margin: 17px 0;
+   list-style-position:inside;
+   list-style-type: square;
+}
+
+li.a {
+   margin: 17px 0;
+   list-style-position:inside;
+   list-style-type: numbers;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.italic {
+font-style: oblique;
+}
+
+.underline {
+text-decoration: underline;
+}
+
+.subheading {
+font-size:12.0pt;
+text-align:center;
+font-style: oblique;
+margin:auto; 
+display:table;
+}
+
+hr{
+  max-width:100%;
+  color: #373D3F;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  border: 0;
+  background-color: #fff;
+  border-top: 1px dashed #8c8c8c;
+
+}

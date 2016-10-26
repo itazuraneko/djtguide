@@ -1,0 +1,112 @@
+body {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  margin:40px auto;
+
+  line-height:1.6;
+  background: #F6F6F6;
+  margin-top: 0px;
+}
+
+
+.extra { 
+    display: none;
+}
+
+p:hover .extra {
+    display: inline-block;
+}
+
+.container {
+    width: 800px;
+}
+
+
+img {
+
+float:right;
+    opacity: 0.35;
+margin-top: 200px;
+    margin-right: 10%;
+}
+
+.byline {
+z-index: 100;
+position: absolute;
+float:left;
+margin-top: 50px;
+margin-left: 20%;
+  text-align: left;
+font-size:20.0pt;
+color: #F44D54;
+}
+
+
+
+.volumes {
+z-index: 100;
+position: absolute;
+float:left;
+margin-top: 200px;
+margin-left: 20%;
+  text-align: left;
+font-size:15.0pt;
+}
+
+
+a.one:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.one:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.one:hover {
+color: #F44D54;
+    background-color: transparent;
+    text-decoration:underline;
+}
+a.one:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.threadsred {
+margin-top: 75px;
+margin-left: 75px;
+text-align: left;
+font-size:16.0pt;
+color: #F44D54;
+}
+
+.threads {
+margin-top: 20px;
+margin-left: 100px;
+text-align: left;
+font-size:12.0pt;
+}
+
+a.two:link {
+color: #F44D54;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.two:visited {
+color: #F44D54;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.two:hover {
+color: #F44D54;
+    background-color: transparent;
+    text-decoration:underline;
+}
+a.two:active {
+color: #F44D54;
+    background-color: transparent;
+    text-decoration: none;
+}
