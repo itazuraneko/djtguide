@@ -153,11 +153,13 @@ text-decoration: underline;
 }
 
 .subheading {
-font-size:12.0pt;
 text-align:center;
-font-style: oblique;
 margin:auto; 
 display:table;
+}
+
+.subheading a {
+	font-weight:bold;
 }
 
 hr{
