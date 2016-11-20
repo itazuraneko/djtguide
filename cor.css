@@ -298,6 +298,11 @@ dl {
   left: 36em;
 }
 
+.tabPanel-widget label:nth-child(21),
+.tabPanel-widget h2:nth-child(23) {
+  left: 45em;
+}
+
 
 
 .tabPanel-widget input + h2 + div {
