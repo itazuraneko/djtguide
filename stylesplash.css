@@ -76,18 +76,27 @@ a.one:active {
 
 
 .threadsred {
-margin-top: 75px;
-margin-left: 75px;
-text-align: left;
-font-size:16.0pt;
+margin-top: 4em;
+margin-left: 4em;
+font-size:122%;
 color: #F44D54;
 }
 
 .threads {
-margin-top: 20px;
-margin-left: 100px;
-text-align: left;
-font-size:12.0pt;
+margin-left: 6em;
+}
+
+.threads a {
+    color:#F44D54;
+    text-decoration:none;
+}
+
+.threads td {
+    padding:.2em .8em;
+}
+
+.help:hover {
+    cursor:help;
 }
 
 a.two:link {
