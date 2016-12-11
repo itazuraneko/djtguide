@@ -1,3 +1,13 @@
+#night {
+	position:absolute;
+	top:.1em;
+	right:.6em;
+	font-size:120%;
+	text-decoration:none;
+	color: #F44D54;
+	cursor:pointer;
+}
+
 html {
    max-height: 999999px;
 }

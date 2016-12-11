@@ -1,3 +1,13 @@
+#night {
+	position:absolute;
+	top:.4em;
+	right:.6em;
+	font-size:200%;
+	text-decoration:none;
+	color: #F44D54;
+	cursor:pointer;
+}
+
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
   margin:40px auto;
@@ -31,21 +41,13 @@ float:left;
     margin-top:2.1em;
 }
 
-a.one:link {
-    color: black;
-    text-decoration: none;
-}
-a.one:visited {
+a.one {
     color: black;
     text-decoration: none;
 }
 a.one:hover {
 color: #F44D54;
     text-decoration:underline;
-}
-a.one:active {
-    color: black;
-    text-decoration: none;
 }
 
 .threadsred {
