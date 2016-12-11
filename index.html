@@ -4,7 +4,7 @@
 <meta charset="utf-8"></meta>
 <title>DJT</title>
 <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-<link rel="stylesheet" href="style/style.css?20">
+<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <script src="assets/script.js"></script>
@@ -25,7 +25,11 @@
 <p><a class="one" href="threads.html">thread webring</a></p>
 </div>
 
-<img src="assets/back0.png" id="image"><script>document.getElementById('image').src = 'assets/back' + Math.floor(Math.random() * 5) +'.png';</script> 
+<img src="assets/back3.png?2" id="image" class="noinvert">
+<script>
+if(checkCookie() == false) {
+	document.getElementById('image').src = 'assets/back' + Math.floor(Math.random() * 5) +'.png?2';
+}</script> 
 
 <!--<p id="notice"></p>-->
 

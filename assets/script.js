@@ -19,7 +19,7 @@ function toggleNight() {
 
 function nightMode() {
 	link = document.createElement('link');
-	link.href = 'style/night.css';
+	link.href = 'style/night.css?2';
 	link.rel = 'stylesheet';
 	link.type = 'text/css';
 	link.id = 'nightcss';

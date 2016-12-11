@@ -1,7 +1,47 @@
-html {
+img {
     filter: invert(100%);
 }
 
 body {
-	background-color:#000;
+	background-color:#0c1016;
+	color:#b5c0d1;
 }
+
+a:link {
+	color:#4286f4;
+}
+
+a:visited {
+	color:#6c4aa8;
+}
+
+a.one {
+	color:#fff;
+}
+
+	.heading {
+		background-color: #081c33; 
+		color: #aaa;
+	}
+	
+	.table td , .table {
+		border: 1px solid #4a5766;
+	}
+	
+	.tabPanel-widget > div {
+		background: #0c1016;
+	}
+	
+	.suggested {
+		background-color:#153024;
+	}
+	
+	
+	.tabPanel-widget > h2 {
+		background: #4e5556;
+		color: #fff;
+	}
+
+	.tabPanel-widget { 
+		background: #4e5556;
+	}

@@ -75,9 +75,6 @@ color: #0066ff;
 }
 
 
-
-
-
 	table {
    font-size: 12px;
   margin:0px auto;
@@ -93,93 +90,6 @@ color: #0066ff;
 		color: #373D3F;
 		font-weight: bold;
 	}
-
-	.anki {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.xslx {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-	.internet {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-	.l-r {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.writing {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.listening {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.grammar {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-	.vocab {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-	.misc {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.readers {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.reference {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	.culture {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
-
-	td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-
 
 
 
@@ -363,7 +273,7 @@ dl {
   .tabPanel-widget h2 {
     width: auto;
     position: static !important;
-    background: #999 !important;
+    background: #999;
   }
   
 
