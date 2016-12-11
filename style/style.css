@@ -1,11 +1,14 @@
 #night {
 	position:absolute;
-	top:.4em;
-	right:.6em;
-	font-size:200%;
+	top:.2em;
+	right:.3em;
 	text-decoration:none;
-	color: #F44D54;
 	cursor:pointer;
+	opacity:.6;
+}
+
+#night:hover {
+	opacity:1;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
   margin-top: 0px;
 }
 
-img {
+#image {
 opacity: 0.35;
 right:10%;
 position:absolute;
@@ -37,7 +40,7 @@ font-size:15.0pt;
 float:left;
 }
 
-.volumes, img {
+.volumes, #image {
     margin-top:2.1em;
 }
 

@@ -1,13 +1,20 @@
 #night {
 	position:absolute;
-	top:2px;
-	right:.6em;
-	font-size:120%;
+	top:0px;
+	right:.4em;
 	font-weight:bold;
 	text-decoration:none;
-	color: #F44D54;
 	cursor:pointer;
 	z-index:100;
+	opacity:.6;
+}
+
+#night img {
+	height:35px;
+}
+
+#night:hover {
+	opacity:1;
 }
 
 body {
