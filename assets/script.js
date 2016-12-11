@@ -1,14 +1,12 @@
-
-	var div = document.createElement('div');
-	div.innerHTML = '☽';
-	div.id = 'night';
-	div.title = 'night mode';
-	document.body.appendChild(div);
-	div.onclick = toggleNight;
-	
-	if(checkCookie() == true) {
-		nightMode();
-	}
+if(checkCookie() == true) {
+	nightMode();
+}
+var div = document.createElement('div');
+div.innerHTML = '☽';
+div.id = 'night';
+div.title = 'night mode';
+document.body.appendChild(div);
+div.onclick = toggleNight;
 
 function toggleNight() {
 	if(checkCookie() == false) {
