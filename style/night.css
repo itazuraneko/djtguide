@@ -1,5 +1,9 @@
 img {
-    filter: invert(100%);
+	filter: invert(100%);
+}
+
+.noinvert {
+	filter: invert(0%);
 }
 
 body {

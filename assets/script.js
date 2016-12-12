@@ -11,6 +11,7 @@ div.onclick = toggleNight;
 function toggleNight() {
 	if(checkCookie() == false) {
 		nightMode();
+		document.getElementById('image').src = 'assets/back3.png';
 	} else {
 		document.getElementsByTagName('head')[0].removeChild(document.getElementById('nightcss'));
 		setCookie('0');
@@ -19,7 +20,7 @@ function toggleNight() {
 
 function nightMode() {
 	link = document.createElement('link');
-	link.href = 'style/night.css?2';
+	link.href = 'style/night.css';
 	link.rel = 'stylesheet';
 	link.type = 'text/css';
 	link.id = 'nightcss';
