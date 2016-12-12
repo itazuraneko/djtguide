@@ -81,10 +81,32 @@ margin-left: 6em;
     text-align:center;
     float:left;
     width:100%;
+	padding:1.5em 0;
 }
 
 #notice a {
 color: #F44D54;
 text-decoration:none;
 font-weight:bold;
+}
+
+.answer {
+	font-size:93%;
+}
+
+.collapse{
+	cursor: pointer;
+	display: block;
+	color: #F44D54;
+	cursor:pointer;
+}
+
+.collapse + input{
+	display: none;
+}
+.collapse + input + div{
+	display:none;
+}
+.collapse + input:checked + div{
+	display:block;
 }
