@@ -6,6 +6,10 @@ img {
 	filter: invert(0%);
 }
 
+.formats, .author {
+	color:#fff;
+}
+
 body {
 	background-color:#0c1016;
 	color:#b5c0d1;
