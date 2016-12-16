@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /cor.html
+Disallow: /ebooks.html
