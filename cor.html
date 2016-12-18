@@ -9,18 +9,26 @@
 <body>
 <script src="assets/script.js"></script>
 <script>
-function switchTab() {
+function setHash() {
 	window.location.hash = this.id;
 }
 
-onload = function () {
-	if (window.location.hash.substring(1)) {
-		document.getElementById(window.location.hash.substring(1)).checked = true;
+function switchTab() {
+	hash = window.location.hash.substring(1);
+	if (hash) {
+		document.getElementById(hash).checked = true;
+	} else {
+		document.getElementById('study').checked = true;
 	}
+}
+
+onload = function () {
+	switchTab();
+	window.onhashchange = switchTab;
 	
 	var tabs = document.getElementsByName('tabs');
 	for (var i = 0; i < tabs.length; i++) {
-		tabs[i].onclick = switchTab;
+		tabs[i].onclick = setHash;
 	}
 }
 </script>
