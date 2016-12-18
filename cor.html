@@ -7,10 +7,27 @@
 <link rel="stylesheet" href="style/cor.css?2">
 </head>																				
 <body>
-<script src="assets/script.js"></script>																																	
+<script src="assets/script.js"></script>
+<script>
+function switchTab() {
+	window.location.hash = this.id;
+}
+
+onload = function () {
+	if (window.location.hash.substring(1)) {
+		document.getElementById(window.location.hash.substring(1)).checked = true;
+	}
+	
+	var tabs = document.getElementsByName('tabs');
+	for (var i = 0; i < tabs.length; i++) {
+		tabs[i].onclick = switchTab;
+	}
+}
+</script>
+																																	
 <div class="tabPanel-widget">
-    <label for="tab-1" tabindex="0"></label>
-      <input id="tab-1" type="radio" name="tabs" checked="true" aria-hidden="true">
+    <label for="study" tabindex="0"></label>
+      <input id="study" type="radio" name="tabs" checked="true" aria-hidden="true">
     <h2>教本</h2>
     <div>
 																																
@@ -235,8 +252,8 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 <tr class="culture"><td>	culture	</td><td>	Understanding Manga and Anime	</td><td>	<a href="https://mega.nz/#!ixEBwT6Q!cwaoqOb5rCfOfpD4bsyMYV7GbHZh72EG2o-CcxnPDdc">mega link</a>	</td><td>		</td></tr>
 </tbody></table>																																			
 </div>																																			
-<label for="tab-2" tabi ndex="0"></label>
-    <input id="tab-2" type="radio" name="tabs" aria-h idden="true">
+<label for="manga" tabindex="0"></label>
+    <input id="manga" type="radio" name="tabs" aria-hidden="true">
     <h2>漫画</h2>
     <div>				
 																														
@@ -860,8 +877,8 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 <tr class="furui"><td>	古い	</td><td>	Zero Men	</td><td>	<a href="https://mega.nz/#F!uUZWQabB!8Y38yNRRILMizFsSl7JB4A">０マン</a>	</td><td>	Osamu Tezuka	</td><td>	手塚治虫	</td><td>		</td><td>		</td><td>		</td><td>	<a href="<a href="http://goo.gl/8TyqPe">wiki.jp link</a>	</td></tr>
 </tbody></table>																																			
 </div>																																			
-<label for="tab-3" tabi ndex="0"></label>
-    <input id="tab-3" type="radio" name="tabs" aria-h idden="true">
+<label for="novels" tabindex="0"></label>
+    <input id="novels" type="radio" name="tabs" aria-hidden="true">
     <h2>小説</h2>
     <div>				
 		
@@ -1443,8 +1460,8 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 																
 </tbody></table>																																			
 </div>																																			
-<label for="tab-4" tabi ndex="0"></label>
-    <input id="tab-4" type="radio" name="tabs" aria-h idden="true">
+<label for="film" tabindex="0"></label>
+    <input id="film" type="radio" name="tabs" aria-hidden="true">
     <h2>映画</h2>
     <div>																																			
 
@@ -1497,8 +1514,8 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 
 </div>	
 
-<label for="tab-5" tabi ndex="0"></label>
-    <input id="tab-5" type="radio" name="tabs" aria-h idden="true">
+<label for="fonts" tabindex="0"></label>
+    <input id="fonts" type="radio" name="tabs" aria-hidden="true">
     <h2>fonts</h2>
     <div>
 <p>Many of these fonts have slight inconsistencies with the official standard; see <a href="http://i.imgur.com/51LNqBX.png">this image</a> for a detailed comparison. "Suggested" fonts have a colored background.</p>	
@@ -1557,8 +1574,8 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 
 
 																																		
-<label for="tab-6" tabi ndex="0"></label>
-    <input id="tab-6" type="radio" name="tabs" aria-h idden="true">
+<label for="dead" tabindex="0"></label>
+    <input id="dead" type="radio" name="tabs" aria-hidden="true">
     <h2>dead links</h2>
     <div>
 
