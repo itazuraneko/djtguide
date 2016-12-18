@@ -10,7 +10,8 @@
 <script src="assets/script.js"></script>
 <script>
 function setHash() {
-	window.location.hash = this.id;
+	var base = window.location.href.split('#')[0];
+	window.location.replace( base + '#' + this.id);
 }
 
 function switchTab() {
@@ -23,13 +24,15 @@ function switchTab() {
 }
 
 onload = function () {
-	switchTab();
-	window.onhashchange = switchTab;
+	if(document.getElementById('study').checked == true) {
+		switchTab();
+	}
 	
 	var tabs = document.getElementsByName('tabs');
 	for (var i = 0; i < tabs.length; i++) {
 		tabs[i].onclick = setHash;
 	}
+	window.onhashchange = switchTab;
 }
 </script>
 																																	
@@ -559,6 +562,7 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 <tr class="seinen"><td>	青年	</td><td>	Genshiken	</td><td>	<a href="https://mega.nz/#F!6URhGBID!nOb4B6D61osArIZGESwXog">げんしけん</a>	</td><td>	Shimoku Kio	</td><td>	木尾士目	</td><td>	Comedy Slice of Life	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/Z1RqrT">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Giant Killing	</td><td>	<a href="https://mega.nz/#F!qVYFQQhL!PFOoljZ5_dAZjP4oXKSyfA">ジャイアントキリング</a>	</td><td>	Tsunamoto Masaya & Tsujitomo	</td><td>	綱本将也＆ツジトモ	</td><td>	Comedy Drama School Life Seinen Sports	</td><td>		</td><td>		</td><td>		</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Go! Ina Junior High Ping Pong Club	</td><td>	<a href="https://mega.nz/#F!XVpCnAyD!pP_vyi5D2FOYt20ONMCcAg">行け！稲中卓球部</a>	</td><td>	Fuyura Minoru	</td><td>	古谷実	</td><td>	Comedy Mature Romance School Life	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/jFd3Yu">wiki.jp link</a>	</td></tr>
+<tr class="seinen"><td>	青年	</td><td>	Golden Mosaic	</td><td>	<a href="https://mega.nz/#F!D9wFFCZA!KN3JPk6VaNQwYPM0f61Thw">きんいろモザイク</a>	</td><td>	Hara Yui	</td><td>	原悠衣	</td><td>	Comedy School Life Slice of Life	</td><td>		</td><td>		</td><td>	<a href="https://ja.wikipedia.org/wiki/きんいろモザイク">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Green Blood	</td><td>	<a href="https://mega.nz/#F!7Y5XATQb!oDsGeNMLEVD6Tj3jttTMuw">GREEN BLOOD</a>	</td><td>	Kakizaki Masasumi	</td><td>	林達永＆金光鉉	</td><td>	Action Drama Historical Mature Psychological Tragedy	</td><td>		</td><td>		</td><td>		</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Green Hill	</td><td>	<a href="https://mega.nz/#F!zRoSESiC!hYznOZImIXfkEpnoPycMmw">グリーンヒル</a>	</td><td>	Fuyura Minoru	</td><td>	古谷実	</td><td>	Comedy	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/AgVe5X">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Gyo	</td><td>	<a href="https://mega.nz/#F!LFQnARbL!pmtRhcsL2-H9yQLgJCTlhA">ギョ</a>	</td><td>	Junji Ito	</td><td>	伊藤潤二	</td><td>	Drama Horror Mature Mystery Psychological Sci-fi Tragedy	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/6y5OoF">wiki.jp link</a>	</td></tr>
@@ -675,6 +679,7 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 <tr class="seinen"><td>	青年	</td><td>	She, The Ultimate Weapon	</td><td>	<a href="https://mega.nz/#F!yZxhwCBJ!c-2bNZ0mj2wFX1TWOycPmw">最終兵器彼女</a>	</td><td>	Shin Takahashi	</td><td>	高橋しん	</td><td>	Drama Romance Sci-fi Slice of Life	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/MbjnJm">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Shinjuku Swan	</td><td>	<a href="https://mega.nz/#F!Bskz0aSA!aAdtTmmREeEMWQ_OdNfwaw">新宿スワン</a>	</td><td>	Wakui Ken	</td><td>	和久井健	</td><td>	Action Drama Ecch	</td><td>		</td><td>		</td><td>		</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Silver Nina	</td><td>	<a href="https://mega.nz/#F!ipoCQCxa!EI7I6yGS91OMTCsR7orNxg">銀のニーナ</a>	</td><td>	Itokatsu	</td><td>	イトカツ	</td><td>		</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/RtYZCm">wiki.jp link</a>	</td></tr>
+<tr class="seinen"><td>	青年	</td><td>	Slow Start	</td><td>	<a href="https://mega.nz/#F!i4IT0SrS!rNwyku8XSBy2-AdHTKGQYQ">スロウスタート</a>	</td><td>	Tokumi Yuiko	</td><td>	篤見唯子	</td><td>	Comedy	</td><td>		</td><td>	◯	</td><td>		</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Solanin	</td><td>	<a href="https://mega.nz/#F!QdFxBY6B!OyU6EmzPgJXlz6ZPCdxdsw">ソラニン</a>	</td><td>	Inio Asano	</td><td>	浅野いにお	</td><td>	Drama Romance Slice of Life Tragedy	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/xo3fnZ">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Strain	</td><td>	<a href="https://mega.nz/#F!Alsl2LIK!rToeMh8PEsXpiNOXZT8KRg">ストレイン</a>	</td><td>	Ryoichi Ikegami	</td><td>	池上遼一	</td><td>	Action Adul	</td><td>		</td><td>		</td><td>	<a href="http://goo.gl/HfPq73">wiki.jp link</a>	</td></tr>
 <tr class="seinen"><td>	青年	</td><td>	Sugar Dark - Umerareta Yami to Shoujo	</td><td>	<a href="https://mega.nz/#F!vx9QQQRJ!d1gDZNtZnQexfMVI3kgPLA">シュガーダーク 埋められた闇と少女</a>	</td><td>	Arai Enji ＆ Mebae ＆ Ooiwa Kenji	</td><td>	新井円侍＆大岩ケンジ	</td><td>	Fantasy Horror Mature Mystery Romance Supernatural	</td><td>		</td><td>		</td><td>		</td></tr>
@@ -1760,7 +1765,6 @@ Vocabulary deck: Front: word (kanji). Back: translation, reading, component kanj
 <tr><td>	青年	</td><td>	Girigiri Out	</td><td>	ギリギリアウト	</td><td>	Somato	</td><td>	ソウマトウ	</td><td>	Comedy Lewd Mature Romance School Life	</td><td>		</td><td>		</td><td>		</td></tr>
 <tr><td>	青年	</td><td>	Gogo Heaven	</td><td>	GOGO★HEAVEN	</td><td>	Hiromoto Shinichi	</td><td>	ヒロモト森一	</td><td>	Supernatural	</td><td>		</td><td>		</td><td>	https://ja.wikipedia.org/wiki/ヒロモト森一	</td></tr>
 <tr><td>	青年	</td><td>	Golden Boy	</td><td>	GOLDEN BOY	</td><td>	Egawa Tatsuya	</td><td>	江川達也	</td><td>	Adult Adventure Comedy Drama Harem Romance School Life Yuri	</td><td>		</td><td>		</td><td>	https://ja.wikipedia.org/wiki/江川達也	</td></tr>
-<tr><td>	青年	</td><td>	Golden Mosaic	</td><td>	きんいろモザイク	</td><td>	Hara Yui	</td><td>	原悠衣	</td><td>	Comedy School Life Slice of Life	</td><td>		</td><td>		</td><td>	https://ja.wikipedia.org/wiki/きんいろモザイク	</td></tr>
 <tr><td>	青年	</td><td>	Hakumei and Mikochi	</td><td>	ハクメイとミコチ	</td><td>	Kashiki Takuto	</td><td>	樫木祐人	</td><td>	Fantasy Slice of Life	</td><td>		</td><td>		</td><td>	https://ja.wikipedia.org/wiki/ハクメイとミコチ	</td></tr>
 <tr><td>	青年	</td><td>	Hating the Korean Wave	</td><td>	マンガ嫌韓流	</td><td>	Yamano Sharin	</td><td>	山野車輪	</td><td>		</td><td>		</td><td>		</td><td>	https://ja.wikipedia.org/wiki/マンガ_嫌韓流	</td></tr>
 <tr><td>	青年	</td><td>	Hells Angels	</td><td>	HELLS ANGELS	</td><td>	Hiromoto Shinichi	</td><td>	ヒロモト森一	</td><td>	Action Comedy Drama School Life Supernatural	</td><td>		</td><td>		</td><td>	https://goo.gl/AFjVy8	</td></tr>
