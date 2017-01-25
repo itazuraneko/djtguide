@@ -22,6 +22,7 @@ body {
   margin:0px auto;
   line-height:1.6;
   margin-top: 0px;
+  background: #f0f0f0;
 }
 
 
@@ -285,4 +286,9 @@ dl {
 
 .suggested {
 	background-color:#c4eac4;
+}
+
+.table_container {
+	display:table; 
+	margin:auto;
 }
