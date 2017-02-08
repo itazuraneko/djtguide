@@ -1,0 +1,171 @@
+body {
+	font-family:Verdana;
+	background-color:#eef5ed;
+}
+
+h1 {
+	text-align: center;
+	color: #8e6264;
+}
+
+table {
+	border-collapse:collapse;
+	border:1px solid #dae2ef;
+}
+td {
+	border-left:1px solid #dae2ef;
+	border-right:1px solid #dae2ef;
+	text-align:center;
+	padding:.3em .4em;
+}
+
+.checkrow {
+	background-color: #f7f7f7;
+}
+
+.kana {
+	font-size:140%;
+	white-space:nowrap;
+}
+
+#rikaichan-window {
+	display:none!important;
+}
+
+.romaji {
+	white-space:nowrap;
+	display:block;
+	font-size:85%;
+}
+
+#kanabox {
+	margin:auto;
+	width:42em;
+	padding:.7em 2em 0em 2em;
+	background-color:#fff;
+	border-radius:3px;
+}
+
+#options {
+	margin:1.5em auto;
+	width:46em;
+	padding:0;
+	background-color:#fff;
+	border-radius:3px;
+}
+
+#options_inner {
+	padding:0 1.4em 1.4em 1.4em;
+}
+
+h2 {
+	background-color:#e6e1e1;
+	color:#8e6264;
+	margin:0;
+	padding:.3em .5em;
+	border-radius:3px 3px 0px 0px;
+}
+
+h3 {
+	color:#6f4749;
+}
+
+.checkall a {
+	color:#4d99b7;
+	cursor:pointer;
+}
+
+.checkall {
+	float:right;
+	font-size:85%;
+}
+
+h2 .checkall {
+	font-size:70%;
+	padding-top:3px;
+}
+
+#kana_con {
+	text-align:center;
+	font-size:300%;
+}
+
+#stroke {
+	width:2em;
+}
+
+#input {
+	text-align:center;
+	margin-top:.8em;
+}
+
+#input_box {
+	width:16em;
+	border:1px solid #eee;
+	padding:6px;
+	text-align:center;
+	font-size:100%;
+	color:#3d1e1e;
+}
+
+ul#tools, #count {
+	margin-top:1em;
+	font-size:78%;
+}
+
+ul#tools {
+	padding:0px;
+	display:inline-block;
+}
+
+ul#tools li {
+	display:inline;
+	list-style-type: none;
+
+	margin-right:1.2em;
+	font-weight: bold;
+}
+
+ul#tools li a {
+	color:#4d99b7;
+	cursor:pointer;
+}
+
+#count {
+	float:right;
+}
+
+#show_options {
+	display: none;
+}
+#show_options + div {
+	display:none;
+}
+#show_options:checked + div {
+	display:block;
+}
+
+#message {
+	text-align:center;
+	font-size:90%;
+	margin-top:1em;
+}
+
+#answer {
+	text-align:center;
+	margin-bottom:.4em;
+	font-size:90%;
+	visibility:hidden;
+}
+
+#wrong {
+	color:red;
+}
+
+.font_example {
+	font-size:2.2em;
+}
+
+.font_example img {
+	width:47px;
+}
