@@ -169,3 +169,7 @@ ul#tools li a {
 .font_example img {
 	width:47px;
 }
+
+#explanation {
+	line-height:1.6em;
+}

@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DJT Kana</title>
-	<link rel="stylesheet" href="djtkana.css" />
+	<link rel="stylesheet" href="djtkana.css?3" />
 </head>
 <body>
-<script src="djtkana.js"></script>
+<script src="djtkana.js?3"></script>
 
 <h1>DJT Kana</h1>
 
@@ -31,7 +31,7 @@
 <div id="options_inner">
 <h3>Hiragana <span class="checkall"><a onclick="check('hcheck')">check all</a> | <a onclick="uncheck('hcheck')">uncheck all</a></span></h3>
 <table>
-	<tr class="checkrow" id="hcheck">
+	<tr class="checkrow hcheck">
 		<td><input type="checkbox" class="kanacheck" id="hsingle" checked /></td>
 		<td><input type="checkbox" class="kanacheck" id="hk" /></td>
 		<td><input type="checkbox" class="kanacheck" id="hs" /></td>
@@ -143,7 +143,7 @@
 
 <h3>Hiragana combinations <span class="checkall"><a onclick="check('hccheck')">check all</a> | <a onclick="uncheck('hccheck')">uncheck all</a></span></h3>
 <table>
-	<tr class="checkrow" id="hccheck">
+	<tr class="checkrow hccheck">
 		<td><input type="checkbox" class="kanacheck" id="hdk" /></td>
 		<td><input type="checkbox" class="kanacheck" id="hds" /></td>
 		<td><input type="checkbox" class="kanacheck" id="hdc" /></td>
@@ -203,7 +203,7 @@
 
 <h3>Katakana <span class="checkall"><a onclick="check('kcheck')">check all</a> | <a onclick="uncheck('kcheck')">uncheck all</a></span></h3>
 <table>
-	<tr class="checkrow" id="kcheck">
+	<tr class="checkrow kcheck">
 		<td><input type="checkbox" class="kanacheck" id="ksingle" /></td>
 		<td><input type="checkbox" class="kanacheck" id="kk" /></td>
 		<td><input type="checkbox" class="kanacheck" id="ks" /></td>
@@ -315,7 +315,7 @@
 
 <h3>Katakana combinations <span class="checkall"><a onclick="check('kccheck')">check all</a> | <a onclick="uncheck('kccheck')">uncheck all</a></span></h3>
 <table>
-	<tr class="checkrow" id="kccheck">
+	<tr class="checkrow kccheck">
 		<td><input type="checkbox" class="kanacheck" id="kdk" /></td>
 		<td><input type="checkbox" class="kanacheck" id="kds" /></td>
 		<td><input type="checkbox" class="kanacheck" id="kdc" /></td>
@@ -373,10 +373,10 @@
 	</tr>
 </table>
 
-<h3>Fonts</h3>
+<h3>Fonts <span class="checkall"><a onclick="check('allfonts')">check all</a> | <a onclick="uncheck('allfonts')">uncheck all</a></span></h3>
 
 <table>
-	<tr class="checkrow">
+	<tr class="checkrow allfonts">
 		<td><input type="checkbox" class="fontcheck" id="default" checked /></td>
 		<td><input type="checkbox" class="fontcheck" id="A-OTF-BokutohNStd-Regular" /></td>
 		<td><input type="checkbox" class="fontcheck" id="A-OTF-FolkPro-Regular" /></td>
@@ -399,7 +399,7 @@
 		<td><span class="font_example"><img src="fonts/ArmedBanana/ぎ.png" /></span></td>
 	</tr>
 	
-	<tr class="checkrow">
+	<tr class="checkrow allfonts">
 		<td><input type="checkbox" class="fontcheck" id="DFCry5_0" /></td>
 		<td><input type="checkbox" class="fontcheck" id="DFMrg3_0" /></td>
 		<td><input type="checkbox" class="fontcheck" id="F5AJCCPE_0" /></td>
@@ -425,11 +425,25 @@
 
 <p>(The last font above is difficult and you may want to skip it as a beginner.)</p>
 	
-<!--
-<h3>Q&A</h3>
-<p class="question"></p>
-<p class="answer"></p>
--->
+<h3>Explanation</h3>
+<div id="explanation">
+<p>Grind a row of kana until you stop making mistakes, then add another row. Press the <code>Play sound</code> link to make sure you are pronouncing the kana correctly. If you wish to write, the <code>Stroke order</code> link will show you the proper form.</p>
+
+<p>The two little dots (<a href="https://en.wikipedia.org/wiki/Dakuten">dakuten</a>) next to certain kana indicate that the first consonant is "muddied" (voiced). For example, か (ka) becomes が (ga). The first letter of the romaji for these kana transforms as follows:
+<ul>
+	<li>k -> g</li>
+	<li>s -> z</li>
+	<li>t -> d</li>
+	<li>h -> b</li>
+</ul>
+
+<p>A few kana add a small circle to indicate a "p" consonant transformation. For example, ほ (ho) becomes ぽ (po).</p>
+
+<p>The smaller kana ゅ, ょ, and ゃ are used to combine kana sounds. For example, in <span style="white-space:nowrap">ぎゃ</span> (gya) the consonant of ぎ (gi) combines with the sound from や (ya). The small っ (distinct from つ/tsu) is not itself pronounced, but lengthens the consonant that follows, as in にっぽん (nippon). Read <a href="http://www.guidetojapanese.org/learn/grammar/hiragana">Tae Kim</a> for more information about kana.</p>
+<p></p>
+</div>
 
 </div>
 </div>
+</body>
+</html>

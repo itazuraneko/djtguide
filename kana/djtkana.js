@@ -117,6 +117,8 @@ var kana = {
 		{ 'ピャ': 'pya', 'ピュ': 'pyu', 'ピョ': 'pyo'},
 }
 
+var show_tools = ['あ', 'い', 'う', 'え', 'お', 'か', 'き', 'く', 'け', 'こ', 'さ', 'し', 'す', 'せ', 'そ', 'た', 'ち', 'つ', 'て', 'と', 'な', 'に', 'ぬ', 'ね', 'の', 'は', 'ひ', 'ふ', 'へ', 'ほ', 'ま', 'み', 'む', 'め', 'も', 'や', 'ゆ', 'よ', 'ら', 'り', 'る', 'れ', 'ろ', 'わ', 'を', 'ん', 'ア', 'イ', 'ウ', 'エ', 'オ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'サ', 'シ', 'ス', 'セ', 'ソ', 'タ', 'チ', 'ツ', 'テ', 'ト', 'ナ', 'ニ', 'ヌ', 'ネ', 'ノ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'マ', 'ミ', 'ム', 'メ', 'モ', 'ヤ', 'ユ', 'ヨ', 'ラ', 'リ', 'ル', 'レ', 'ロ', 'ワ', 'ヲ', 'ン'];
+
 var replacements = {
 	'tu' : 'tsu',
 	'ti' : 'chi',
@@ -166,17 +168,25 @@ function load_settings() {
 }
 
 function check(set) {
-	tds = document.getElementById(set).children;
-	for (i = 0; i < tds.length; i++) {
-		tds[i].children[0].checked = true;
+	var trs = document.getElementsByClassName(set);
+	for (i = 0; i < trs.length; i++) {
+		var tds = trs[i].children;
+		for (x = 0; x < tds.length; x++) {
+			if(tds[x].children[0].id != 'KOI-WIN') {
+				tds[x].children[0].checked = true;
+			}
+		}
 	}
 	save_settings();
 }
 
 function uncheck(set) {
-	tds = document.getElementById(set).children;
-	for (i = 0; i < tds.length; i++) {
-		tds[i].children[0].checked = false;
+	var trs = document.getElementsByClassName(set);
+	for (i = 0; i < trs.length; i++) {
+		var tds = trs[i].children;
+		for (x = 0; x < tds.length; x++) {
+			tds[x].children[0].checked = false;
+		}
 	}
 	save_settings();
 }
@@ -257,7 +267,7 @@ function show_kana() {
 	}
 	document.getElementById('answer').innerHTML = cur_reading;
 	
-	if(cur_kana.length > 1) {
+	if(show_tools.indexOf(cur_kana) == -1) {
 		document.getElementById('tools').style.visibility = 'hidden';
 	} else {
 		document.getElementById('tools').style.visibility = 'visible';
