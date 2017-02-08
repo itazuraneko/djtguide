@@ -3,6 +3,13 @@ body {
 	background-color:#eef5ed;
 }
 
+a {
+	color:#4d99b7;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration:none;
+}
+
 h1 {
 	text-align: center;
 	color: #8e6264;

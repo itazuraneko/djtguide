@@ -253,6 +253,12 @@ function show_kana() {
 		shuffled = shuffle(active);
 	}
 	
+	if(cur_kana) {
+		if(shuffled[0][0] == cur_kana) {
+			shuffled.shift();
+		}
+	}
+	
 	cur_kana = shuffled[0][0];
 	cur_reading = shuffled[0][1];
 	
@@ -268,9 +274,9 @@ function show_kana() {
 	document.getElementById('answer').innerHTML = cur_reading;
 	
 	if(show_tools.indexOf(cur_kana) == -1) {
-		document.getElementById('tools').style.visibility = 'hidden';
+		document.getElementById('tool_stroke').style.visibility = 'hidden';
 	} else {
-		document.getElementById('tools').style.visibility = 'visible';
+		document.getElementById('tool_stroke').style.visibility = 'visible';
 	}
 }
 
@@ -329,6 +335,11 @@ function play_sound() {
 	var audio = new Audio('audio/' + cur_reading + '.mp3');
 	audio.play();
 	document.getElementById('input_box').focus();
+}
+
+function play_other(file) {
+	var audio = new Audio('audio/' + file + '.mp3');
+	audio.play();
 }
 
 function stroke_order() {
