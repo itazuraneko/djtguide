@@ -122,8 +122,8 @@ dl {
 
 .tabPanel-widget > label,
 .tabPanel-widget > h2 {
-  font-size: 1.1em;
-  width: 9em;
+  font-size: 1em;
+  width: 7em;
   height: 2em;
   line-height: 2em;
 }
@@ -160,27 +160,32 @@ dl {
 
 .tabPanel-widget label:nth-child(5),
 .tabPanel-widget h2:nth-child(7) {
-  left: 9em;
+  left: 7em;
 }
 
 .tabPanel-widget label:nth-child(9),
 .tabPanel-widget h2:nth-child(11) {
-  left: 18em;
+  left: 14em;
 }
 
 .tabPanel-widget label:nth-child(13),
 .tabPanel-widget h2:nth-child(15) {
-  left: 27em;
+  left: 21em;
 }
 
 .tabPanel-widget label:nth-child(17),
 .tabPanel-widget h2:nth-child(19) {
-  left: 36em;
+  left: 28em;
 }
 
 .tabPanel-widget label:nth-child(21),
 .tabPanel-widget h2:nth-child(23) {
-  left: 45em;
+  left: 35em;
+}
+
+.tabPanel-widget label:nth-child(25),
+.tabPanel-widget h2:nth-child(27) {
+  left: 42em;
 }
 
 

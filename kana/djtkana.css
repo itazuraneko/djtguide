@@ -75,6 +75,10 @@ h2 {
 
 h3 {
 	color:#6f4749;
+	border-bottom:1px dotted #c0b0b1;
+	padding-bottom:9px;
+	padding-left:.4em;
+	margin-top:1.6em;
 }
 
 .checkall a {
