@@ -253,10 +253,8 @@ function show_kana() {
 		shuffled = shuffle(active);
 	}
 	
-	if(cur_kana) {
-		if(shuffled[0][0] == cur_kana) {
-			shuffled.shift();
-		}
+	if(cur_kana && shuffled[0][0] == cur_kana) {
+		shuffled.shift();
 	}
 	
 	cur_kana = shuffled[0][0];

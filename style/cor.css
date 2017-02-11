@@ -76,11 +76,11 @@ color: #0066ff;
 }
 
 
-	table {
-   font-size: 12px;
-  margin:0px auto;
-		border: 1px solid #CCC; 
-	} 
+table {
+	font-size: 12px;
+	margin:0px auto;
+	border: 1px solid #CCC; 
+} 
 	td {
 		padding: 4px;
 		margin: 3px;
