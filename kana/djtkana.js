@@ -123,10 +123,7 @@ var replacements = {
 	'tu' : 'tsu',
 	'ti' : 'chi',
 	'ci' : 'chi', 
-	'si' : 'chu', // these are broken. will fix later.
-	'du' : 'zu',
-	'di' : 'ji',
-	'wo' : 'o',
+	'wo' : 'o'
 };
 
 var active = [];
@@ -294,7 +291,7 @@ function check_answer() {
 	chars_correct = cur_reading.split('');
 	
 	for (i = 0; i < chars.length; i++) {
-		if(chars[i] != chars_correct[i]) {
+		if(chars[i] != chars_correct[i] && answer != 'w') {
 			document.getElementById('message').innerHTML = '<span id="wrong">' + cur_kana + ' = ' + cur_reading + '</span>';
 			wrong = true;
 		}
@@ -343,7 +340,6 @@ function play_other(file) {
 function stroke_order() {
 	document.getElementById('kana').innerHTML = '<img src="stroke/' + cur_kana + '.gif" id="stroke" />';
 	document.getElementById('input_box').focus();
-
 }
 
 
@@ -373,6 +369,7 @@ onload = function () {
 	answer_input.onpropertychange = answer_input.oninput;
 	
 	document.body.onkeydown = function(e){
+		document.getElementById('input_box').focus();
 		if(e.keyCode == 32 || e.keyCode == 13){
 			e.preventDefault();
 			if( ! wrong) {
