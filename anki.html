@@ -73,9 +73,11 @@
 <li>Real-Time Import <a href="https://ankiweb.net/shared/info/2512410601">add-on</a> for Anki</li>
 </ul>
 
-<p>After installing both of the above, open Firefox, make your way over to the add-ons <a href="assets/realtime1.png">management page</a>, locate the Rikaisama add-on, and hit the "Preferences" button to open up the Rikaisama options window. We are interested in two tabs here: <a href="assets/realtime2.png">"Clipboard & Save" and "Anki"</a>.</p>
+<p>After installing both of the above, open Firefox, make your way over to the add-ons <a href="assets/realtime1.png">management page</a>, locate the Rikaisama add-on, and hit the "Preferences" button to open up the Rikaisama options window. <!-- We are interested in two tabs here: <a href="assets/realtime2.png">"Clipboard & Save" and "Anki"</a>.--></p>
 
+<!--
 <p>Go to the "Clipboard & Save" tab. The only thing we are interested in here is the "Saved audio" field (you can skip this part if you are not interested in having audio on your cards). You need to point this field to Anki's "collection.media" folder, which should be located inside a folder called "Anki" within your computer's "Documents" folder.</p>
+-->
 
 <p>Now, onto the "Anki" tab. The first field we are interested in here is:</p>
 
@@ -84,24 +86,24 @@
 <p>This is where we tell Rikaisama what information we want it to save about a particular word. Here is a typical example:</p>
 
 <ul>
-<li><span style="font-weight:bold;color:#4a7bb2">$d</span><span style="color:inherit">$t</span><span style="font-weight:bold;color:red">$r</span><span style="color:inherit">$t</span><span style="font-weight:bold;color:green">$n</span><span style="color:inherit">$t</span><span style="font-weight:bold;color:purple">[sound:$a]</span></li>
+<li><span style="font-weight:bold;color:#4a7bb2">$d</span><span style="color:inherit">$t</span><span style="font-weight:bold;color:red">$r</span><span style="color:inherit">$t</span><span style="font-weight:bold;color:green">$n</span><!--<span style="color:inherit">$t</span><span style="font-weight:bold;color:purple">[sound:$a]</span>--></li>
 </ul>
 
-<p>There is a key below the "Save format" field explaining what all of this does. The <code>$d</code> option saves the dictionary form of the word you have hovered over (meaning 食べます, for example, would be saved as 食べる). The <code>$t</code> option is used to denote the end of one field (i.e. those in the "Field names" field) and the beginning of another. <code>$r</code> saves the reading, and <code>$n</code> the definition. Finally, <code>[sound:$a]</code> saves an audio clip of the word (if available).</p>
+<p>There is a key below the "Save format" field explaining what all of this does. The <code>$d</code> option saves the dictionary form of the word you have hovered over (meaning 食べます, for example, would be saved as 食べる). The <code>$t</code> option is used to denote the end of one field (i.e. those in the "Field names" field) and the beginning of another. <code>$r</code> saves the reading, and <code>$n</code> the definition. <!-- Finally, <code>[sound:$a]</code> saves an audio clip of the word (if available).--></p>
 
-<p>You will notice in the above example that <code>$a</code> has not been used alone, but rather enclosed in square brackets and preceded by "<code>sound:</code>". This is because audio files must be formatted this way for Anki to play them. If you only put "audio.mp3" into one of your Anki fields (as opposed to "[sound:audio.mp3]"),  you would simply get the text "audio.mp3" on your card.</p>
+<!--<p>You will notice in the above example that <code>$a</code> has not been used alone, but rather enclosed in square brackets and preceded by "<code>sound:</code>". This is because audio files must be formatted this way for Anki to play them. If you only put "audio.mp3" into one of your Anki fields (as opposed to "[sound:audio.mp3]"),  you would simply get the text "audio.mp3" on your card.</p>-->
 
 <h4>"Field names"</h4>
 
 <p>The next field tells Rikaisama to which fields in our Anki deck the information specified in the "Save format" field should be added. A typical example, corresponding to the "Save format" above, would be:</p>
 
 <ul>
-<li><span style="font-weight:bold;color:#4a7bb2">Vocabulary</span> <span style="font-weight:bold;color:red">Reading</span> <span style="font-weight:bold;color:green">Definition</span> <span style="font-weight:bold;color:purple">Audio</span></li>
+<li><span style="font-weight:bold;color:#4a7bb2">Vocabulary</span> <span style="font-weight:bold;color:red">Reading</span> <span style="font-weight:bold;color:green">Definition</span> <!--<span style="font-weight:bold;color:purple">Audio</span>--></li>
 </ul>
 
 <p>These fields MUST exist in our Anki deck in order for this to work. First, create your deck is Anki by pressing the <a href="assets/realtime3.png">"Add" button</a>. Click the <a href="assets/realtime4.png">"Deck" button</a>, then <a href="assets/realtime5.png">"Add"</a>. Type in the name of your new deck in the window that pops up and hit "OK".</p>
 
-<p>Now we need to add the required fields. Hit the <a href="assets/realtime.png6">"Fields..." button</a>. Since all decks must have at least one field, we will first click <a href="assets/realtime7.png">"Add"</a>, type in "Vocabulary" and then hit "OK". We should now have a field called "Vocabulary" in our deck, so we can go ahead and delete the default fields "Front" and "Back" by selecting them and clicking "Delete". Now repeat the adding process for the other required fields: "Reading", "Definition" and "Audio". Once done, hit <a href="assets/realtime8.png">"Close"</a>.</p>
+<p>Now we need to add the required fields. Hit the <a href="assets/realtime.png6">"Fields..." button</a>. Since all decks must have at least one field, we will first click <a href="assets/realtime7.png">"Add"</a>, type in "Vocabulary" and then hit "OK". We should now have a field called "Vocabulary" in our deck, so we can go ahead and delete the default fields "Front" and "Back" by selecting them and clicking "Delete". Now repeat the adding process for the other required fields: "Reading" and "Definition"<!--and "Audio"-->. Once done, hit <a href="assets/realtime8.png">"Close"</a>.</p>
 
 <p>Now all that's left to do is edit the appearance of our cards. To do this, click the <a href="assets/realtime9.png">"Cards..." button</a>. This is outside the scope of this tutorial, but at the following pastebin link you will find a sample which you can copy and paste: <a href="http://pastebin.com/HWk3Nnm6">http://pastebin.com/HWk3Nnm6</a></p>
 
@@ -109,7 +111,7 @@
 
 <h4>TROUBLESHOOTING</h4>
 
-<p>If you followed the instructions and it still does not work, manually add a new card to your mining deck and try again.</p>
+<p>If you followed the instructions and it still does not work, manually add a new card to your mining deck and try again. Note that Rikaisama used to support importation of audio files, but this feature is currently broken.</p>
 
 </body>
 </html>
