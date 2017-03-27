@@ -25,6 +25,10 @@ body {
   background: #f0f0f0;
 }
 
+.options {
+	margin:.5em 0 1em 1em;
+}
+
 
 :selection {
     background-color: #fff2a8;
