@@ -3,3 +3,11 @@ Disallow: /cor.html
 Disallow: /cor_txt.html
 Disallow: /ebooks.html
 Disallow: /djtlib_link.txt
+Disallow: /assets/books_azw3_collection.txt
+Disallow: /assets/books_epub_mobi_txt
+Disallow: /assets/books_history.txt
+Disallow: /assets/books_html.txt
+Disallow: /assets/books_translations.txt
+Disallow: /assets/books_txt.txt
+Disallow: /djtlib_link.txt
+Disallow: /djtlib_link.txt
