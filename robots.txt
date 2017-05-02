@@ -10,4 +10,4 @@ Disallow: /assets/books_html.txt
 Disallow: /assets/books_translations.txt
 Disallow: /assets/books_txt.txt
 Disallow: /djtlib_link.txt
-Disallow: /djtlib_link.txt
+Disallow: /new.txt
