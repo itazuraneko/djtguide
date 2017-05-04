@@ -120,10 +120,16 @@ var kana = {
 var show_tools = ['あ', 'い', 'う', 'え', 'お', 'か', 'き', 'く', 'け', 'こ', 'さ', 'し', 'す', 'せ', 'そ', 'た', 'ち', 'つ', 'て', 'と', 'な', 'に', 'ぬ', 'ね', 'の', 'は', 'ひ', 'ふ', 'へ', 'ほ', 'ま', 'み', 'む', 'め', 'も', 'や', 'ゆ', 'よ', 'ら', 'り', 'る', 'れ', 'ろ', 'わ', 'を', 'ん', 'ア', 'イ', 'ウ', 'エ', 'オ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'サ', 'シ', 'ス', 'セ', 'ソ', 'タ', 'チ', 'ツ', 'テ', 'ト', 'ナ', 'ニ', 'ヌ', 'ネ', 'ノ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'マ', 'ミ', 'ム', 'メ', 'モ', 'ヤ', 'ユ', 'ヨ', 'ラ', 'リ', 'ル', 'レ', 'ロ', 'ワ', 'ヲ', 'ン'];
 
 var replacements = {
-	'tu' : 'tsu',
-	'ti' : 'chi',
-	'ci' : 'chi', 
-	'wo' : 'o'
+	'o': ['wo'],
+	'chi': ['ci'],
+	'shi': ['si'],
+	'tsu': ['tu'],
+	'zu': ['du'],
+	'ji': ['di', 'zi'],
+	'fu': ['hu'],
+	'ja': ['dya'],
+	'jo': ['dyo'],
+	'ju': ['dyu']
 };
 
 var active = [];
@@ -281,20 +287,33 @@ function check_answer() {
 		answer = 'x';
 	}
 	
-	for (orig in replacements) {
-		if(answer == orig) {
-			answer = replacements[orig];
+	chars = answer.split('');
+	
+	possible = [cur_reading];
+	if(cur_reading in replacements) {
+		possible = possible.concat(replacements[cur_reading]);
+	}
+
+	for (i = 0; i < chars.length; i++) {
+		var err = true;
+		
+		for (x = 0; x < possible.length; x++) {
+			if(chars[i] == possible[x].charAt(i)) {
+				err = false;
+			}
+			if(answer == possible[x]) {
+				answer = cur_reading;
+			}
+		}
+		
+		if(err) {
+			break;
 		}
 	}
 	
-	chars = answer.split('');
-	chars_correct = cur_reading.split('');
-	
-	for (i = 0; i < chars.length; i++) {
-		if(chars[i] != chars_correct[i] && answer != 'w') {
-			document.getElementById('message').innerHTML = '<span id="wrong">' + cur_kana + ' = ' + cur_reading + '</span>';
-			wrong = true;
-		}
+	if(err) {
+		wrong = true;
+		document.getElementById('message').innerHTML = '<span id="wrong">' + cur_kana + ' = ' + cur_reading + '</span>';
 	}
 	
 	if(answer == cur_reading) {

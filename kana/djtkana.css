@@ -184,3 +184,8 @@ ul#tools li a {
 #explanation {
 	line-height:1.6em;
 }
+
+.help {
+	cursor:help;
+	border-bottom:1px dotted #aaa;
+}
