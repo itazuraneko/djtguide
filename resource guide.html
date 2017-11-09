@@ -110,7 +110,11 @@
 
 <p><span class="bold">Anki Shared Decks</span> - This is highly recommended to learn vocabulary. Obviously, you will need <a href="http://ankisrs.net/">Anki</a> to use it. There are decks, you may search for them and see which one will best suit your needs. The most commonly recommended vocabulary deck is <a href="anki.html">Core 2k/6k</a>.</p>
 
+<p><span class="bold">※</span><a href="https://foosoft.net/projects/yomichan/">Yomichan’s Anki integration</a> - Yomichan has a companion Anki add-on called <a href="https://foosoft.net/projects/yomichan/#anki-integration">AnkiConnect</a> which allows users to automatically create cards in Anki for the words which they hover over. Unlike with Rikaisama, this is done by clicking a button as opposed to pressing a hotkey.
+
+<!--
 <p><span class="bold">※</span><a href="http://rikaisama.sourceforge.net/#realtime_import_help">Rikaisama's Anki Real-Time Import Feature</a> - An invaluable tool for creating a mining deck. Allows you to automatically create cards in Anki simply by hovering over a word and pressing "r". <a href="anki.html#import">Here</a> is an explanation of how to set it up. </p>
+-->
 
 <h3 id="Grammar">Grammar</h3>
 
@@ -185,7 +189,41 @@
 
 <p><a href="http://www.nicovideo.jp/">Niconico</a> - A site with lots of Japanese videos and also a section for streamers if you want to see what a native sounds like. Ideal if you don’t want to actually commit to interacting with another person.</p>
 
-<p><a href="http://pastebin.com/3qH9MgZJ">Radio shows</a> - Radio shows provide a variety of themes and people speaking. But people also speak at a natural or even fast pace. Recommended for advanced listeners or people simply interested in listening to radio.</p>
+<p><a href="http://pastebin.com/3qH9MgZJ">Radio shows</a> - Radio shows provide a variety of themes and people speaking. But people also speak at a natural or even fast pace. Recommended for advanced listeners or people simply interested in listening to radio. One of the only means of hearing (and practicing listening to) genuine, conversational Japanese without actually going to Japan.
+<ul>
+	<li>
+		Radio stations from prefectures where the West <a href="https://en.wikipedia.org/wiki/Kant%C5%8D_dialect">Kanto dialects</a> (<a href="https://ja.wikipedia.org/wiki/%E8%A5%BF%E9%96%A2%E6%9D%B1%E6%96%B9%E8%A8%80">西関東方言</a>) are spoken with the Tokyo-style <a href="https://en.wikipedia.org/wiki/Japanese_pitch_accent">pitch accent</a> (<a href="https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%BC%8F%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%B3%E3%83%88">東京式アクセント</a>):
+		<ul>
+			<li><a href="https://tunein.com/radio/Tokyo-r100932/">Tokyo (東京)</a></li>
+			<li><a href="https://tunein.com/radio/Kanagawa-r101688/">Kanagawa (神奈川)</a></li> 
+		</ul>
+	</li>
+	<li>
+		Radio stations from prefectures where the West Kanto dialects (西関東方言) are partially spoken with a mix of pitch accents:
+		<ul>
+			<li><a href="https://tunein.com/radio/Gunma-r100930/">Gunma (群馬)</a> - Spoken almost universally and with the Tokyo-style pitch accent.</li>
+			<li><a href="https://tunein.com/radio/Chiba-r101689/">Chiba (千葉)</a> - Spoken almost universally with the Tokyo-style pitch accent and a variant of the Tokyo-style pitch accent.</li>
+			<li><a href="https://tunein.com/radio/Saitama-r101798/">Saitama (埼玉)</a> - Spoken widely; pitch accent where spoken is Tokyo-style..</li>
+			<li><a href="https://tunein.com/radio/Yamanashi-r101792/">Yamanashi (山梨)</a> - Spoken only in the Gun'uchi (郡内) region; pitch accent where spoken is Tokyo-style.</li>
+			<li><a href="https://tunein.com/radio/Tochigi-r101777/">Tochigi (栃木)</a> - Spoken only in and around Ashikaga (足利) city; pitch accent where spoken is Tokyo-style.</li>
+		</ul>
+	</li>
+	<li><a href="https://tunein.com/radio/Japan-r101255/">Japanese radio stations from other regions</a></li>
+</ul>
+</p>
+	
+<p><strong>Podcasts</strong> -
+<ul>
+	<li><a href="http://sokoani.com/">sokoani (そこ☆あに)</a> - A long-running Japanese podcast about anime. There are over 500 episodes constituting approximately 450 hours (and 10.7 GB) of listening material. Using <a href="https://en.wikipedia.org/wiki/Wget">wget</a>, it is possible to automate the process of downloading all the episodes with the following command:<br/>
+	<code>wget http://podcast.sokoani.com/SA/mp3/s{001..501}.mp3</code><br/>
+	(adjust the 501 number to match whatever the current number of episodes is)<br/>
+	There are also a number of special episodes (そこあに増刊号) which can be downloaded with the following command:<br/>
+	<code>wget http://podcast.sokoani.com/SA/mp3/z{001..038}.mp3</code><br/>
+	(again, adjust the final number to match the current number of episodes - note that episode 7 is split into two parts so this command will fail to download those; you will need to individually wget z007-1.mp3 and z007-2.mp3 for episode 7)</li>
+	<li><a href=""><a href="http://podcast.1242.com/">The Voice (ザ・ボイス)</a></a> - A frequently updated political podcast running since 2012, with a grand total of 1205 episodes at the time of writing (Oct. 2017). I estimate that there is somewhere around 700 hours of listening material here. The guests on the podcast are mostly male speakers who speak very quickly, so prepare yourself for a challenge. The best way to download the episodes seems to be from the <a href="http://podcast.1242.com/voice/index.xml">RSS feed</a> with a download manager like <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownThemAll</a> (total size of all current episodes is 29.3 GB). Don’t try to wget the URL range like with the sokoani podcast above, else you will end up downloading episodes of every other podcast on the site in the process.</li>
+	<li><a href="https://tunein.com/radio/Japanese-Talk-g349/">More podcasts</a></li>
+</ul>
+</p>
 
 <h3 id="Videos">Videos</h3>
 
@@ -245,7 +283,9 @@ Protip: Type in kaomoji and hit space. Alternatively: read <a href="http://nihon
 
 <p><span class="italic">Use these to look up words. Jisho and Tangorin also have kanji lookup.</span></p>
 
-<p><span class="bold">※</span><a href="http://rikaisama.sourceforge.net/">Rikaisama</a> - <span class="italic">(Firefox)</span> - This is a tool that shows you equivalent or close meanings (in English) of Japanese words in plaintext format, by hovering over them. Has many useful features such as audio playback and the ability to save words to a file or import it straight into Anki.</p>
+<p><span class="bold">※</span><a href="">Yomichan</a> - <em>(Firefox & Chrome)</em> - A browser add-on like Rikaisama which allows the user to hover over words in order to see their meanings. By default, its behaviour is quite different from Rikaisama’s, though it can be configured to behave in a similar manner by disabling the “Middle mouse button scans” option and setting the “Scan modifier key” to “None” (it is recommended if you do this to set the “Popup offset” option to either 0 or 1, else it will become very difficult to mouse into the popup before it automatically disappears). After installation, you need to import JMDict in Yomichan's settings by clicking the arrow next to the input box under the "Dictionaries" section. Has a companion Anki add-on called <a href="https://foosoft.net/projects/yomichan/#anki-integration">AnkiConnect</a> which allows users to automatically add words they hover over to their Anki deck.
+
+<p><a href="http://rikaisama.sourceforge.net/">Rikaisama</a> - <span class="italic">(Firefox)</span> - This is a tool that shows you equivalent or close meanings (in English) of Japanese words in plaintext format, by hovering over them. Has many useful features such as audio playback and the ability to save words to a file or import it straight into Anki. <strong>Note: Rikaisama is abandonware and will no longer work in Firefox versions 57 and onwards.</strong></p>
 
 <ul>
 <li>There is also Rikaichan for Firefox, but there is absolutely no reason to use it since Rikaisama has all of its features.</li>
@@ -254,8 +294,6 @@ Protip: Type in kaomoji and hit space. Alternatively: read <a href="http://nihon
 
 
 <p><a href="https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp?hl=en">Rikaikun</a> - <span class="italic">(Chrome)</span> - Essentially an inferior clone of Rikaichan, but still serviceable enough if you just can’t let go of the botnet. No Anki import feature.</p>
-
-<p><a href="https://foosoft.net/projects/yomichan/">Yomichan</a> - Pop-up dictionary for Chrome/Firefox. The main advantage is that it has an Anki import feature like Rikaisama but supports Chrome. Unlike the Rikai family, by default Yomichan requires you to hold shift to parse text (this can be disabled), and click to remove the pop-up each time it appears (this cannot be disabled). The pop-up box is also less compact than Rikai (<a href="assets/yomi_vs_rikai.png">comparison</a>). After installation, you need to import JMDict in Yomichan's settings by clicking the arrow next to the input box under the "Dictionaries" section.</p>
 
 <p><span class="bold">※</span><a href="http://jisho.org/">Jisho</a> - Online J>E/E>J dictionary. It also contains information on kanji including a order, readings, etc. You can also search a kanji by handwriting or its radicals if you don’t know the correct stroke order. </p>
 
@@ -308,9 +346,9 @@ Protip: Type in kaomoji and hit space. Alternatively: read <a href="http://nihon
 
 <p><a href="http://visual-novels-general.wikia.com/wiki/Basic_Guide_to_Installation">VN installation guide</a> - Explains how to set-up your system locale to work with VNs. Ignore the parts about English patches.</p>
 
-<p><span class="bold">※</span><a href="http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/411001-ithvnr-ith-with-the-vnr-engine?p=5723219#post5723219">ITHVNR</a> - Extracts text from Japanese games as it's being displayed. This is <a href="http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/185725-interactive-text-hooker-new-text-extraction-tool">Interactive Text Hooker</a> with the Visual Novel Reader (VNR) engine, allowing it to work with a wider selection of stuff (including non-VN stuff like 32bit media players for watching Japanese subbed anime). It also doesn't require hook codes for most things. <a href="https://mega.nz/#!0Z5yEa6J!b16dxlwrDKHHoWE5bPdBgFkaTBcWNQhGnkHvOiA9fa8">Back-up link</a>. Latest version requires <a href="https://www.microsoft.com/download/details.aspx?id=48145">Visual C++ Redistributable for Visual Studio 2015</a>.</p>
+<p><span class="bold">※</span><a href="http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/411001-ithvnr-ith-with-the-vnr-engine?p=5723219#post5723219">ITHVNR</a> - Extracts text from Japanese games as it's being displayed. This is <a href="http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/185725-interactive-text-hooker-new-text-extraction-tool">Interactive Text Hooker</a> with the Visual Novel Reader (VNR) engine, allowing it to work with a wider selection of stuff (including non-VN stuff like 32bit media players for watching Japanese subbed anime). It doesn't require hook codes for most things, but if the game isn't hooking properly, you may need to put a <a href="https://web.archive.org/web/20170819091116/agth.wikia.com/wiki/H-codes">hook code</a> in the input box. <a href="https://mega.nz/#!0Z5yEa6J!b16dxlwrDKHHoWE5bPdBgFkaTBcWNQhGnkHvOiA9fa8">Back-up link</a>. Latest version requires <a href="https://www.microsoft.com/download/details.aspx?id=48145">Visual C++ Redistributable for Visual Studio 2015</a>.</p>
 
-<p><span class="bold">※</span><a href="http://pastebin.com/raw/DgZ84qwk">Firefox Auto-scrolling Rikai VN Texthooking with ITHVNR Setup Guide</a> - A guide on setting up ITHVNR so you can send VN text to Firefox and read it with Rikaisama (and use the convenient word mining function). The recommended method.</p>
+<p><span class="bold">※</span><a href="http://pastebin.com/raw/DgZ84qwk">Firefox Auto-scrolling Rikai/Yomichan VN Texthooking with ITHVNR Setup Guide</a> - A guide on setting up ITHVNR so you can send VN text to Firefox and read it with Rikaisama or Yomichan (and use the convenient word mining function). The recommended method.</p>
 
 <h4 id="Downloading VNs"><span class="italic">Downloading VNs</span></h4>
 <ul>
