@@ -11,7 +11,7 @@
 
 
 <p><h1>Anki Startup Guide</h1></p>
-<p><span class="subheading">(<a href="#fonts">fonts</a> • <a href="#import">real-time import feature</a>)</span></p>
+<p><span class="subheading">(<a href="#fonts">fonts</a> • <a href="#import">yomichan integration</a>)</span></p>
 <!-- <p><span class="italic">original version found</span> <span class="bold"><a href="http://goo.gl/CYTQvs">here</a></span></p> -->
 <h3 class="step">Step 1:</h3>
 <p>Download Anki: <a href="http://ankisrs.net">http://ankisrs.net</a></p>
@@ -60,6 +60,103 @@
 
 <hr>
 
+
+
+
+<h3 id="import">Yomichan Anki integration guide</h3>
+
+<p>This guide assumes you have already installed Yomichan and added the JMdict dictionary to it. If you have not yet done this, see the <a href="https://foosoft.net/projects/yomichan/">Yomichan webpage</a> for instructions.</p>
+ 
+<p>Yomichan can be set up to automatically create Anki cards from the words which you hover over with it. In order to do this, it is necessary to install Yomichan's companion Anki add-on called AnkiConnect. The installation is no different from that of any other Anki add-on and there is no post-install configuration necessary. See the <a href="https://foosoft.net/projects/anki-connect/">AnkiConnect page</a> on the Yomichan website for instructions.</p>
+ 
+<p>After you have installed AnkiConnect, you will need to create a deck in Anki to add the words to, assuming you have not done so already. This guide will assume you want to create a deck containing the following information:</p>
+<ul>
+<li>The word written in kanji.</li>
+<li>The word written in kana.</li>
+<li>The word written in kanji, with accompanying furigana.</li>
+<li>The definition of the word.</li>
+<li>Audio of the word being spoken by a native speaker (if available).</li>
+</ul>
+ 
+<p>We want 5 seperate pieces of information, so this means our deck will need 5 seperate fields to house said information. To get started, we will need to open Anki and click on the "<code>Create Deck</code>" button at the bottom of the window. We will then be presented with a pop-up asking us what we wish to call our deck - I will be using the name "Japanese Vocabulary", but feel free to call it whatever you want.</p>
+ 
+<p>Once the deck has been created, click on it to select it, then press the "<code>Add</code>" button at the top of the screen. This will present us with a pop-up window allowing us to not only add cards to the deck, but also change various things about the deck itself. Our first order of business is creating a new note type to use for our deck. Begin by clicking the button next to the word "Type" (the button itself will most likely say "Basic"), which will open up another pop-up window. From here, our actions will involve clicking more buttons in order to open yet more pop-up windows:<br/>
+&nbsp;&nbsp;&nbsp;<code>Manage</code> <strong>-></strong> <code>Add</code> <strong>-></strong> Select "<code>Clone: Basic</code>" and then "<code>OK</code>" <strong>-></strong> Type in name (e.g. Yomi) and then click "<code>OK</code>" <strong>-></strong> Close <strong>-></strong> Select "Yomi" and then click "<code>Choose</code>"</p>
+ 
+<p>Having fun yet? Now it's time to create our new fields and delete the default ones. To begin, click the "<code>Fields...</code>" button to open up yet another pop-up window. Our first order of business is to click the "<code>Add</code>" button in order to create our new fields:</p>
+<ul>
+<li>Expression</li>
+<li>Meaning</li>
+<li>Reading</li>
+<li>Furigana</li>
+<li>Audio</li>
+</ul>
+ 
+<p>Once done, select the default fields and click "<code>Delete</code>" to get rid of them, then close the pop-up to return to the original "Add" pop-up window. The final thing we need to do in Anki is edit the appearance of the cards themselves. Begin by clicking the "<code>Cards...</code>" button. Here's where things get subjective, but I like to keep my cards simple. If you wish to copy my formatting, then simply add the text below to the relevant sections:</p>
+ 
+<div style="font-family: monospace; white-space: pre; border:1px solid #aaa; padding:1em 2em; font-size:95%;"><strong>Front Template</strong>
+&lt;div class=expression&gt;{{Expression}}&lt;/div&gt;
+ 
+ 
+<strong>Styling</strong>
+.card {
+ font-family: TakaoPGothic;
+ font-size: 20px;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+ 
+.expression {
+ font-size: 56px;
+}
+ 
+.reading {
+ font-size: 42px;
+}
+ 
+ 
+<strong>Back Template</strong>
+&lt;div class=expression&gt;{{Furigana}}&lt;/div&gt;
+ 
+&lt;hr id=answer&gt;
+ 
+&lt;div class=reading&gt;{{Reading}}&lt;/div&gt;&lt;br&gt;
+{{Meaning}}
+ 
+&lt;!--{{Audio}}--&gt;</div>
+ 
+ <p>For the font I use, see <a href="https://launchpad.net/takao-fonts">here</a>.</p>
+ 
+<p>Once you've got your card formatting how you want it, simply close the window, along with any remaining pop-up windows (making sure to leave Anki itself open!).</p>
+ 
+<p>Now that we're done with Anki, we need to make our way over to Yomichan's settings and tick the "Enable Anki integration" checkbox. Upon doing so, a bunch of new options should appear. We are interested in the options in the "Terms" section. First off, under "Deck", we want to select the deck which we just created (Japanese Vocabulary), and under "Model" we want to select the note type which we just created (Yomi). The "Terms" section should now display our newly created fields, so all that's left from here is to assign corresponding "Markers" to them (see the Yomichan webpage for <a href="https://foosoft.net/projects/yomichan/#anki-integration">a full list of options</a>).</p>
+
+<ul>
+<li>Expression - <code>{expression}</code></li>
+<li>Meaning - <code>{glossary}</code></li>
+<li>Reading - <code>{reading}</code></li>
+<li>Furigana - <code>{furigana}</code></li>
+<li>Audio - <code>{audio}</code></li>
+</ul>
+ 
+<p>Alternatively, you can use <code>{glossary-brief}</code> for the Meaning field. <code><a href="/assets/yomi-glossary-default.png">{glossary}</a></code> contains information about the word, such as whether it is a noun, verb, etc. and what dictionary the definition is being taken from. <code><a href="/assets/yomi-brief-default.png">{glossary-brief}</a></code> contains no other information besides the definitions themselves.</p>
+ 
+<p>Another alternative is using <code>{furigana-plain}</code> instead of <code>{furigana}</code>. <code>{furigana}</code> uses HTML ruby text to display the furigana, while <code>{furigana-plain}</code> uses the method of applying furigana provided by the <a href="https://ankiweb.net/shared/info/3918629684">"Japanese Support" Anki addon</a>.</p>
+ 
+<p>And with that, we're done! To test that you've set everything up properly, try hovering over the following word and clicking the green + button which should now be present in Yomichan's pop-up: 無為無能</p>
+
+<h4>TEMPLATES</h4>
+<p>If you're not satisfied with Yomichan's default formatting of definitions, there are alternative templates. Simply copy the contents of the linked template into the template box under the <code>Anki Options</code> section of Yomichan's settings (make sure you have the <code>Show advanced options</code> checkbox ticked), making sure to replace the existing values (and also making sure that you are using <code>{glossary-brief}</code> or <code>{glossary}</code>, as appropriate).</p>
+
+<ul>
+	<li><code>{glossary}</code>: <strong><a href="/assets/yomi-glossary-default.png">Default template</a></strong></li>
+	<li><code>{glossary}</code>: <strong><a href="/assets/yomi-glossary-bullets.png">Give single definitions their own bullet point</a></strong>. Use <a href="/assets/yomi-glossary-bullets.txt">this template</a>. If you want space between numbered items like in the preview, add <code style="background-color:#eff0f2; padding:2px">ul { margin-top:10px; margin-bottom:18px; }</code> to your card styling.</li>
+	<li><code>{glossary-brief}</code>: <strong><a href="/assets/yomi-brief-default.png">Default template</a></strong></strong></li>
+	<li><code>{glossary-brief}</code>: <strong><a href="/assets/yomi-brief-rikai.png">Compressed like Rikai-sama</a></strong>. Use <a href="/assets/yomi-brief-rikai.txt">this template</a>. </li>
+</ul>
+
+<!--
 <h3 id="import">Rikaisama's Anki Real-Time Import Feature</h3>
 <p>Rikaisama's <a href="http://rikaisama.sourceforge.net/#realtime_import_help">real-time import feature</a> allows you to quickly add new words to your mining deck. (See the <a href="guide.html">guide</a> for an explanation of mining.)</p>
 
@@ -104,6 +201,7 @@
 <p>Now all that's left to do is edit the appearance of our cards. To do this, click the <a href="assets/realtime9.png">"Cards..." button</a>. This is outside the scope of this tutorial, but at the following pastebin link you will find a sample which you can copy and paste: <a href="http://pastebin.com/HWk3Nnm6">http://pastebin.com/HWk3Nnm6</a></p>
 
 <p>And that's it! Now open your <a href="assets/realtime10.png">deck</a> by clicking on it and try adding your very first word: 中出し - just hover over it with your mouse with Rikaisama enabled and hit "r"!</p>
+-->
 
 <h4>TROUBLESHOOTING</h4>
 
