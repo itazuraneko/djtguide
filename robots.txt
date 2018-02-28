@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /cor.html
 Disallow: /cor_txt.html
+Disallow: /lib_extra.html
 Disallow: /ebooks.html
 Disallow: /djtlib_link.txt
 Disallow: /assets/books_azw3_collection.txt
