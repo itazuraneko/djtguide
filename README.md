@@ -1,1 +1,0 @@
-![ケイト](assets/loli.jpg)
